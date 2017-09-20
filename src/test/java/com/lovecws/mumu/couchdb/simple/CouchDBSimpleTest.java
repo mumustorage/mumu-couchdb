@@ -2,6 +2,7 @@ package com.lovecws.mumu.couchdb.simple;
 
 import org.apache.log4j.Logger;
 import org.ektorp.ViewQuery;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.HashMap;
@@ -100,16 +101,19 @@ public class CouchDBSimpleTest {
     }
 
     @Test
+    @Ignore
     public void deleteAttachment() {
         couchDBSimple.deleteAttachment("babmm", "1-feb6f90727ce3b9744249fcf41e043da", "attach");
     }
 
     @Test
+    @Ignore
     public void createAttachment() {
         couchDBSimple.createAttachment("babmm", "1", "attach");
     }
 
     @Test
+    @Ignore
     public void query() {
         couchDBSimple.query();
     }

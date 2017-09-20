@@ -32,7 +32,7 @@ public class CouchDBConfiguration {
     private String databaseName;//数据库名称
 
     public CouchDBConfiguration() {
-        this.databaseName = "babymm";
+        this.databaseName = "babymumu";
     }
 
     public CouchDBConfiguration(final String databaseName) {
