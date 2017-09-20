@@ -1,0 +1,19 @@
+language: java
+os: linux
+env:
+  global:
+    - COUCHDB_HOST=http://127.0.0.1:5984
+
+sudo: required
+
+jdk:
+  - oraclejdk8
+
+services:
+  - couchdb
+
+script: mvn clean install cobertura:cobertura
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+  
